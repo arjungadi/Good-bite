@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Bite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Montserrat, sans-serif;
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff5757;
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .search-container {
+      margin-bottom: 40px;
+    }
+    .search-container input[type=text] {
+      padding: 15px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+    }
+    .search-container button {
+      background-color: #ffc107;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+    }
+    .search-container button:hover {
+      background-color: #ffca28;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .restaurant {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .restaurant img {
+      width: 100%;
+      height: auto;
+    }
+    .restaurant-info {
+      padding: 10px;
+    }
+    .restaurant-info h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .button {
+      display: inline-block;
+      background-color: #ffc107;
+      color: #fff;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 10px;
+      transition: background-color 0.3s ease;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+    }
+    .button:hover {
+      background-color: #ffca28;
+    }
+    .combined-rating {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      display: inline-block;
+    }
+    .combined-rating-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .stars-container {
+      display: flex;
+      justify-content: center;
+    }
+    .star {
+      color: #ffeb3b;
+      font-size: 24px;
+      margin: 0 2px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Good Bite</h1>
+  </header>
+  <div class="container">
+    <div class="search-container">
+      <form action="search-results.html" method="GET">
+        <input type="text" name="query" placeholder="Search for restaurants...">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="section">
+      <h2 class="section-title">Recommendation</h2>
+      <div class="restaurant">
+        <img src="restaurant1.jpg" alt="Restaurant 1">
+        <div class="restaurant-info">
+          <h2>Restaurant 1</h2>
+          <div class="rating">★★★★☆</div>
+          <a href="restaurant-detail.html" class="button">View</a>
+          <div class="combined-rating">
+            <div class="combined-rating-title">Combined Rating</div>
+            <div class="stars-container">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">☆</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="restaurant">
+        <img src="restaurant2.jpg" alt="Restaurant 2">
+        <div class="restaurant-info">
+          <h2>Restaurant 2</h2>
+          <div class="rating">★★★☆☆</div>
+          <a href="restaurant-detail.html" class="button">View</a>
+          <div class="combined-rating">
+            <div class="combined-rating-title">Combined Rating</div>
+            <div class="stars-container">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">☆</span><span class="star">☆</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2 class="section-title">Near You</h2>
+      <div class="restaurant">
+        <img src="restaurant3.jpg" alt="Restaurant 3">
+        <div class="restaurant-info">
+          <h2>Restaurant 3</h2>
+         

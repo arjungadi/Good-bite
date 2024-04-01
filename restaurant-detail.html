@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Details - Good Bite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff5757; /* Red */
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .restaurant-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .restaurant-info img {
+      max-width: 100%;
+      height: auto;
+    }
+    .rating {
+      display: inline-block;
+      background-color: #ffeb3b; /* Yellow */
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .rating-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .dish-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    .dish {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .dish img {
+      width: 100%;
+      height: auto;
+    }
+    .dish-info {
+      padding: 10px;
+    }
+    .dish-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .dish-info .rating {
+      margin-bottom: 10px;
+    }
+    .add-remove {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .add-remove button {
+      background-color: #ffc107; /* Yellow */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .add-remove button:hover {
+      background-color: #ffca28; /* Lighter yellow */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Good Bite</h1>
+  </header>
+  <div class="container">
+    <div class="restaurant-info">
+      <h2>Restaurant Name</h2>
+      <img src="restaurant1.jpg" alt="Restaurant Name">
+      <div class="rating-title">Combined Rating</div>
+      <div class="rating">★★★★☆</div>
+    </div>
+    <div class="dish-container">
+      <div class="dish">
+        <img src="dish1.jpg" alt="Dish 1">
+        <div class="dish-info">
+          <h3>Dish 1</h3>
+          <div class="rating">★★★★☆</div>
+          <div class="add-remove">
+            <button onclick="addToCart()">+</button>
+            <button onclick="removeFromCart()">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish">
+        <img src="dish2.jpg" alt="Dish 2">
+        <div class="dish-info">
+          <h3>Dish 2</h3>
+          <div class="rating">★★★☆☆</div>
+          <div class="add-remove">
+            <button onclick="addToCart()">+</button>
+            <button onclick="removeFromCart()">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish">
+        <img src="dish3.jpg" alt="Dish 3">
+        <div class="dish-info">
+          <h3>Dish 3</h3>
+          <div class="rating">★★★★★</div>
+          <div class="add-remove">
+            <button onclick="addToCart()">+</button>
+            <button onclick="removeFromCart()">-</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more dishes as needed -->
+    </div>
+  </div>
+
+  <script>
+    function addToCart() {
+      // Add logic to add dish to cart
+      alert("Dish added to cart!");
+    }
+
+    function removeFromCart() {
+      // Add logic to remove dish from cart
+      alert("Dish removed from cart!");
+    }
+  </script>
+</body>
+</html>
